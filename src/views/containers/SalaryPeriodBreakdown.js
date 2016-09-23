@@ -3,6 +3,9 @@ import { connect } from 'react-redux'
 
 import { salarySelectors } from '../../core/salary'
 
+/**
+ * period enum types
+ */
 const ANNUAL = 1
 const MONTHLY = 12
 const BIWEEKLY = 26 // 26 bi-weekly paychecks per year
@@ -10,6 +13,12 @@ const WEEKLY = 52
 const DAILY = 365
 
 class SalaryPeriodBreakdown extends React.Component {
+  /**
+   * calculate the salary per time period
+   * @param  {Number} salary the user's salary
+   * @param  {Number} period time period
+   * @return {String}        localeString of the salary per period
+   */
   _getPeriodSalary (salary, period) {
     return (salary / period).toLocaleString()
   }
