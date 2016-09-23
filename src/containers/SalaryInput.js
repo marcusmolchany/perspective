@@ -13,7 +13,7 @@ class SalaryInput extends React.Component {
       <div>
         <label>
           Enter your salary:
-          <input type="number" placeholder="90000" onChangeText={this.props.onChange} />
+          <input type="number" placeholder="90000" onChange={(e) => this.props.onChange(e.target.value)} />
         </label>
       </div>
     )
@@ -23,7 +23,7 @@ class SalaryInput extends React.Component {
 const mapStateToProps = null
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChange: (salary) => dispatch(changeSalary(Number(salary))) //todo: ya dun goofed here
+    onChange: (salary) => dispatch(changeSalary(Number(salary)))
   }
 }
 

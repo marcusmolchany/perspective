@@ -4,7 +4,7 @@ const initialState = [
   {name: 'beer', price: 7.00}
 ]
 
-export default function (stete = initialState, action) {
+export default function (state = initialState, action) {
   switch (action.type) {
     default:
       return state

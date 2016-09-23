@@ -10,7 +10,9 @@ class ItemsList extends React.Component {
 
   render () {
     return (
-      this.props.items.map((item) => <Item item={item} salary={this.props.salary} />)
+      <div>
+        {this.props.items.map((item, id) => <Item key={id} item={item} salary={this.props.salary} />)}
+      </div>
     )
   }
 }
