@@ -16,13 +16,17 @@ class SalaryPeriodBreakdown extends React.Component {
 
   render () {
     return (
-      <div>
-        <p>Annual    - ${this._getPeriodSalary(this.props.salary, ANNUAL)}</p>
-        <p>Monthly   - ${this._getPeriodSalary(this.props.salary, MONTHLY)}</p>
-        <p>Bi-weekly - ${this._getPeriodSalary(this.props.salary, BIWEEKLY)}</p>
-        <p>Weekly    - ${this._getPeriodSalary(this.props.salary, WEEKLY)}</p>
-        <p>Daily     - ${this._getPeriodSalary(this.props.salary, DAILY)}</p>
-      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Annual    - ${this._getPeriodSalary(this.props.salary, ANNUAL)}</td><td> &middot; </td>
+            <td>Monthly   - ${this._getPeriodSalary(this.props.salary, MONTHLY)}</td><td> &middot; </td>
+            <td>Bi-weekly - ${this._getPeriodSalary(this.props.salary, BIWEEKLY)}</td><td> &middot; </td>
+            <td>Weekly    - ${this._getPeriodSalary(this.props.salary, WEEKLY)}</td><td> &middot; </td>
+            <td>Daily     - ${this._getPeriodSalary(this.props.salary, DAILY)}</td>
+          </tr>
+        </tbody>
+      </table>
     )
   }
 }
