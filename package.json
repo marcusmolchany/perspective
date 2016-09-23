@@ -1,5 +1,6 @@
 {
   "name": "perspective-generated",
+  "homepage": "https://marcusmolchany.github.io/perspective",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
