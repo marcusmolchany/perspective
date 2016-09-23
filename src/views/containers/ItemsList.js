@@ -2,6 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Item from '../components/Item'
+import { itemsSelectors } from '../../core/items'
+import { salarySelectors } from '../../core/salary'
 
 class ItemsList extends React.Component {
   render () {
@@ -15,8 +17,8 @@ class ItemsList extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    items: state.items,
-    salary: state.salary
+    items: itemsSelectors.getItems(state),
+    salary: salarySelectors.getSalary(state)
   }
 }
 const mapDispatchToProps = null
