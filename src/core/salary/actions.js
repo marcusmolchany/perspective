@@ -1,4 +1,4 @@
-export const SALARY_CHANGE = 'salary/salary_change'
+import { SALARY_CHANGE } from './action-types'
 
 export function changeSalary (salary) {
   return {

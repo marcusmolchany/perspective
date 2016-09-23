@@ -1,4 +1,4 @@
-import { SALARY_CHANGE } from '../actions/salary'
+import { SALARY_CHANGE } from './action-types'
 
 export default function (state = 0, action) {
   switch (action.type) {
