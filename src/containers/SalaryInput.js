@@ -4,10 +4,6 @@ import { connect } from 'react-redux'
 import { changeSalary } from '../actions/salary'
 
 class SalaryInput extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <div>

@@ -4,10 +4,6 @@ import { connect } from 'react-redux'
 import Item from '../components/Item'
 
 class ItemsList extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
       <div>

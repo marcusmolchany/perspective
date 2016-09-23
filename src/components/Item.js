@@ -1,10 +1,6 @@
 import React from 'react'
 
 export default class Item extends React.Component {
-  constructor (props) {
-    super(props)
-  }
-
   _getPercentageOfSalary () {
     return (this.props.item.price / this.props.salary) * 100
   }
