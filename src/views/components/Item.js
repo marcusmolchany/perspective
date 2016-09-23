@@ -23,7 +23,7 @@ export default class Item extends React.Component {
     return (
       <div>
         <h3>{this.props.item.name} - (${this.props.item.price})</h3>
-        <span>{this._getPrettyPercentage(this._getPercentageOfSalary(this.props.item.price))}% of your salary</span>
+        <span>{this._getPrettyPercentage(this._getPercentageOfSalary(this.props.item.price))}% of your annual salary</span>
       </div>
     )
   }
