@@ -8,6 +8,12 @@ const initialState = [
   {name: 'yeezys', price: 250.00}
 ]
 
+/**
+ * items reducer
+ * @param  {Array} state   the current items list
+ * @param  {Object} action redux action
+ * @return {Array}         the updated items list
+ */
 export default function (state = initialState, action) {
   switch (action.type) {
     default:
