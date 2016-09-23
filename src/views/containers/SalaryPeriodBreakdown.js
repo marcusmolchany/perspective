@@ -16,17 +16,20 @@ class SalaryPeriodBreakdown extends React.Component {
 
   render () {
     return (
-      <table>
-        <tbody>
-          <tr>
-            <td>Annual    - ${this._getPeriodSalary(this.props.salary, ANNUAL)}</td><td> &middot; </td>
-            <td>Monthly   - ${this._getPeriodSalary(this.props.salary, MONTHLY)}</td><td> &middot; </td>
-            <td>Bi-weekly - ${this._getPeriodSalary(this.props.salary, BIWEEKLY)}</td><td> &middot; </td>
-            <td>Weekly    - ${this._getPeriodSalary(this.props.salary, WEEKLY)}</td><td> &middot; </td>
-            <td>Daily     - ${this._getPeriodSalary(this.props.salary, DAILY)}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div>
+        <h3>Salary Breakdown</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Annual    - ${this._getPeriodSalary(this.props.salary, ANNUAL)}</td><td> &middot; </td>
+              <td>Monthly   - ${this._getPeriodSalary(this.props.salary, MONTHLY)}</td><td> &middot; </td>
+              <td>Bi-weekly - ${this._getPeriodSalary(this.props.salary, BIWEEKLY)}</td><td> &middot; </td>
+              <td>Weekly    - ${this._getPeriodSalary(this.props.salary, WEEKLY)}</td><td> &middot; </td>
+              <td>Daily     - ${this._getPeriodSalary(this.props.salary, DAILY)}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     )
   }
 }
