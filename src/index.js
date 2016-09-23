@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import App from './views/containers/App';
+import App from './views/containers/App'
 import configureStore from './core/store'
-import './index.css';
+import './index.css'
 
 const store = configureStore()
 
@@ -21,4 +21,4 @@ export default class Root extends React.Component {
 ReactDOM.render(
   <Root />,
   document.getElementById('root')
-);
+)
