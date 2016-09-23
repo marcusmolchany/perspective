@@ -16,7 +16,7 @@ export default class Item extends React.Component {
    * @return {Number|String}     the percentage fixed to two places or '-' if percentage is Infinity
    */
   _getPrettyPercentage (percentage) {
-    return percentage === Infinity ? '-' : percentage.toFixed(2)
+    return percentage === Infinity ? '-' : percentage.toFixed(3)
   }
 
   render () {
