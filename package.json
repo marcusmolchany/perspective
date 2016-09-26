@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "deep-freeze": "0.0.1",
     "react-scripts": "0.4.3"
   },
   "dependencies": {
