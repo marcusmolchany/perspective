@@ -5,7 +5,7 @@
   "private": true,
   "devDependencies": {
     "deep-freeze": "0.0.1",
-    "react-scripts": "0.4.3"
+    "react-scripts": "0.6.0"
   },
   "dependencies": {
     "lodash.throttle": "^4.1.1",
