@@ -2,16 +2,18 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { taxActions } from '../../core/tax'
+import FancyInput from '../components/FancyInput'
 
 class TaxInput extends React.Component {
   render () {
     return (
-      <div>
-        <label>
-          Enter your tax rate:
-          <input type="number" placeholder="0.33" onChange={(e) => this.props.onChange(e.target.value)} />
-        </label>
-      </div>
+      <FancyInput
+        type="number"
+        label="Tax rate"
+        placeholder="0.33"
+        htmlId="taxInput"
+        onChange={this.props.onChange.bind(this)}
+      />
     )
   }
 }
