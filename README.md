@@ -33,3 +33,28 @@ Follow the directions int he create-react-app-README for deploying
 ```shell
 $ npm run build
 ```
+
+# Redux State Format
+Format:
+```js
+{
+  items: [
+    {name: String, price: Number}
+  ],
+  salary: Number,
+  tax: Number
+}
+```
+
+Example:
+```js
+{
+  items: [
+    {name: 'coffee', price: 3.50},
+    {name: 'poke', price: 12.00},
+    {name: 'beer', price: 7.00}
+  ],
+  salary: 55000,
+  tax: 0.33
+}
+```
