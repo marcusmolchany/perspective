@@ -1,4 +1,4 @@
-const initialState = [
+export const initialState = [
   {name: 'coffee', price: 3.50},
   {name: 'poke', price: 12.00},
   {name: 'beer', price: 7.00},
