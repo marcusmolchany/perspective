@@ -1,6 +1,8 @@
 Perspective
 ===========
 
+[![Build Status](https://travis-ci.org/marcusmolchany/perspective.svg?branch=master)](https://travis-ci.org/marcusmolchany/perspective)
+
 This application shows you how much things really cost you
 
 # Getting started
