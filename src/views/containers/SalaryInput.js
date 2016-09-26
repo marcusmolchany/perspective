@@ -2,16 +2,18 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { salaryActions } from '../../core/salary'
+import FancyInput from '../components/FancyInput'
 
 class SalaryInput extends React.Component {
   render () {
     return (
-      <div>
-        <label>
-          Enter your salary:
-          <input type="number" placeholder="55000" onChange={(e) => this.props.onChange(e.target.value)} />
-        </label>
-      </div>
+      <FancyInput
+        type="number"
+        label="Salary"
+        placeholder="55000"
+        htmlId="salaryInput"
+        onChange={this.props.onChange.bind(this)}
+      />
     )
   }
 }
